@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "nombre": "Jungle Speed",
+        "descripcion": "Se mas rapido que los demás a la hora de pillar el totem",
+        "edadMinima": 3,
+        "jugadores": "2-12",
+        "tipo": "cartas",
+        "precio": 10
+    },
+    {
+        "id": 2,
+        "nombre": "Ciudadelas",
+        "descripcion": "Monta tu estrategia cada turno para construir una mejor ciudad que los demas",
+        "edadMinima": 18,
+        "jugadores": "2-7",
+        "tipo": "cartas",
+        "precio": 12
+    },
+    {
+        "id": 3,
+        "nombre": "Dungeons and dragons",
+        "descripcion": "Se el master y dirige la historia o se el jugador y vivela como quieras",
+        "edadMinima": 10,
+        "jugadores": "2+",
+        "tipo": "rol",
+        "precio": 100
+    }
+]
