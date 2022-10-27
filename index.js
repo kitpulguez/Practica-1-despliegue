@@ -81,7 +81,7 @@ app.post("/juegos", (req, res) => {
             {
                 juegos.push(nuevoJuego);
                 res.status(200).send({ok: true, resultado: nuevoJuego});
-                utils.guardarJuegos(juegos);
+                utils.guardarJuegos(ficheroJuegos, juegos);
             }
             else
                 res.status(400).send({ok: false, error: "El juego ya existe"});
@@ -108,7 +108,7 @@ app.put("/juegos/:id", (req, res) => {
             juego.precio = req.body.precio;
 
             res.status(200).send({ok: true, resultado: juego});
-            utils.guardarJuegos(juegos);
+            utils.guardarJuegos(ficheroJuegos, juegos);
         }
         else
             res.status(400).send({ok: false, error: "Juego no encontrado"});
@@ -127,7 +127,7 @@ app.delete('/juegos/:id', (req, res) => {
         {
             juegos = filtrado;
             res.status(200).send({ok: true, resultado: borrado[0]});
-            utils.guardarJuegos(juegos);
+            utils.guardarJuegos(ficheroJuegos, juegos);
         }
         else
             res.status(400).send({ok: false, error: "Juego no encontrado"});
